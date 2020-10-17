@@ -15,4 +15,5 @@
 - [Calculadora Gráfica de Resistores de 4 ou 5 Bandas
 ](http://www.audioacustica.com.br/exemplos/Valores_Resistores/Calculadora_Ohms_Resistor.html
 ) - Esta calculadora converte valores de resistência para ou a partir de códigos de cores de 5 bandas ou de 4 bandas.
+- [Vídeo do BOB](https://www.instagram.com/p/B3rmwicD41k/)
 
