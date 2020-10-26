@@ -1,5 +1,5 @@
 # Curso de Arduino
-> Repositório do materiais de Arduino de Arduino
+> Repositório de materiais do curso de Arduino
 
 ## Links úteis
 
