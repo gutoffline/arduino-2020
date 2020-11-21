@@ -1,23 +1,25 @@
 /*
-Começam com os 3 leds apagados, ao aumentar o valor do potenciômetro
-os leds vão acendendendo, um de cada vez
+Display LCD 16x2 e driver I2C
+Ferramentas > Gerenciar Bibliotecas
+"LiquidCrystal_I2C , Frank Brabender"
+
+Sketch > Incluir biblioteca > LiquidCrystal_I2C
 */
-int valor;
+
+#include <LiquidCrystal_I2C.h>
+LiquidCrystal_I2C lcd(0x27,16,2);
 
 void setup(){
-    pinMode(11,OUTPUT);
-    pinMode(12,OUTPUT);
-    pinMode(13,OUTPUT);
+    lcd.init();
 }
 
 void loop(){
-    valor = analogRead(A0);
-    
-    if(valor < 50){
-        digitalWrite(13,0);
-        digitalWrite(12,0);
-        digitalWrite(11,0);
-    }
-
-    
+    lcd.setBacklight(HIGH);
+    lcd.setCursor(0,0);
+    lcd.print("Curso de Arduino");
+    lcd.setCursor(0,1);
+    lcd.print("Senac Americana");
+    delay(1000);
+    lcd.setBacklight(LOW);
+    delay(1000);
 }
